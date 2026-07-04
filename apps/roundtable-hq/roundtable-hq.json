@@ -1,0 +1,7 @@
+{
+  "description": null,
+  "name": "roundtable-hq",
+  "public_slug": "${roundtable_hq_slug}",
+  "url": "https://roundtable-hq.apps.asur.work",
+  "visibility": "POD"
+}
