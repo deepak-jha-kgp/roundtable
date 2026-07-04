@@ -1,0 +1,13 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "code_hash": "de6c732834385b78c4bbf66c76189790897f84791a7e5fb79516c5fec81012b9",
+  "config": null,
+  "description": "Send a human reply into a waiting agent conversation.",
+  "icon_url": null,
+  "name": "resume_issue",
+  "python_packages": [],
+  "type": "JOB",
+  "visibility": "POD"
+}
