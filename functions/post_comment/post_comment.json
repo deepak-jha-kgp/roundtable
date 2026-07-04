@@ -1,0 +1,13 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "code_hash": "816a9b6f78e1e2ab0a2de24ea226d86b950b9fac797501a0f1b8fc5913a40cb7",
+  "config": null,
+  "description": "Post a comment on an issue and record the event.",
+  "icon_url": null,
+  "name": "post_comment",
+  "python_packages": [],
+  "type": "API",
+  "visibility": "POD"
+}
