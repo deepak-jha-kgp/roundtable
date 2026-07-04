@@ -1,0 +1,19 @@
+{
+  "agent_runtime": {
+    "profile_id": "system:lemma"
+  },
+  "description": "Research specialist: competitive analysis, fact-finding, deep dives. Uses web search and knowledge files.",
+  "icon_url": null,
+  "input_schema": null,
+  "instruction": {
+    "$file": "instruction.md"
+  },
+  "metadata": null,
+  "name": "researcher",
+  "output_schema": null,
+  "toolsets": [
+    "POD",
+    "WEB_SEARCH"
+  ],
+  "visibility": "POD"
+}
