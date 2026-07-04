@@ -1,0 +1,19 @@
+{
+  "agent_runtime": {
+    "profile_id": "system:lemma"
+  },
+  "description": "Content specialist: blog posts, docs, email drafts, changelogs. Writes polished markdown deliverables.",
+  "icon_url": null,
+  "input_schema": null,
+  "instruction": {
+    "$file": "instruction.md"
+  },
+  "metadata": null,
+  "name": "writer",
+  "output_schema": null,
+  "toolsets": [
+    "POD",
+    "WEB_SEARCH"
+  ],
+  "visibility": "POD"
+}
