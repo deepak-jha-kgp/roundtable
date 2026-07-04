@@ -1,0 +1,50 @@
+{
+  "description": "On issue insert/update, let dispatch_issue decide whether to start an agent conversation.",
+  "edges": [
+    {
+      "id": "e_done",
+      "label": null,
+      "source": "dispatch",
+      "target": "done"
+    }
+  ],
+  "icon_url": null,
+  "mode": "GLOBAL",
+  "name": "dispatch-issue",
+  "nodes": [
+    {
+      "config": {
+        "function_name": "dispatch_issue",
+        "input_mapping": {
+          "issue_id": {
+            "optional": false,
+            "type": "expression",
+            "value": "start.metadata.record_id"
+          }
+        }
+      },
+      "id": "dispatch",
+      "label": "Dispatch to agent",
+      "position": null,
+      "type": "FUNCTION"
+    },
+    {
+      "config": {},
+      "id": "done",
+      "label": "Done",
+      "position": null,
+      "type": "END"
+    }
+  ],
+  "start": {
+    "config": {
+      "operations": [
+        "INSERT",
+        "UPDATE"
+      ],
+      "table_name": "issues"
+    },
+    "type": "DATASTORE_EVENT"
+  },
+  "visibility": "POD"
+}
