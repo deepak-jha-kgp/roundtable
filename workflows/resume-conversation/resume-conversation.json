@@ -1,0 +1,87 @@
+{
+  "description": "When a human comments on a waiting issue, send the reply into its agent conversation.",
+  "edges": [
+    {
+      "id": "e_else",
+      "label": "not a human reply (default)",
+      "source": "guard",
+      "target": "skip"
+    },
+    {
+      "id": "e_rule",
+      "label": "human reply",
+      "source": "guard",
+      "target": "resume"
+    },
+    {
+      "id": "e_done",
+      "label": null,
+      "source": "resume",
+      "target": "done"
+    }
+  ],
+  "icon_url": null,
+  "mode": "GLOBAL",
+  "name": "resume-conversation",
+  "nodes": [
+    {
+      "config": {
+        "rules": [
+          {
+            "condition": "start.payload.author_kind == 'human'",
+            "next_node_id": "resume"
+          }
+        ]
+      },
+      "id": "guard",
+      "label": "Human reply?",
+      "position": null,
+      "type": "DECISION"
+    },
+    {
+      "config": {
+        "function_name": "resume_issue",
+        "input_mapping": {
+          "body": {
+            "optional": false,
+            "type": "expression",
+            "value": "start.payload.body"
+          },
+          "issue_id": {
+            "optional": false,
+            "type": "expression",
+            "value": "start.payload.issue_id"
+          }
+        }
+      },
+      "id": "resume",
+      "label": "Resume conversation",
+      "position": null,
+      "type": "FUNCTION"
+    },
+    {
+      "config": {},
+      "id": "skip",
+      "label": "Skip",
+      "position": null,
+      "type": "END"
+    },
+    {
+      "config": {},
+      "id": "done",
+      "label": "Resumed",
+      "position": null,
+      "type": "END"
+    }
+  ],
+  "start": {
+    "config": {
+      "operations": [
+        "INSERT"
+      ],
+      "table_name": "comments"
+    },
+    "type": "DATASTORE_EVENT"
+  },
+  "visibility": "POD"
+}
