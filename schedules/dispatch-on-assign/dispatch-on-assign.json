@@ -1,0 +1,24 @@
+{
+  "account_id": null,
+  "agent_name": null,
+  "config": {
+    "operations": [
+      "INSERT",
+      "UPDATE"
+    ],
+    "table_name": "issues"
+  },
+  "connector_trigger_id": null,
+  "filter_instruction": null,
+  "filter_output_schema": null,
+  "is_active": true,
+  "is_internal": false,
+  "last_error": null,
+  "last_fire_status": "TRIGGERED",
+  "last_fired_at": "2026-07-04T18:00:38.999161Z",
+  "last_run_id": "019f2e4a-249a-7161-bcc5-0d2e32b3e3a7",
+  "name": "dispatch-on-assign",
+  "schedule_type": "DATASTORE",
+  "visibility": "POD",
+  "workflow_name": "dispatch-issue"
+}
