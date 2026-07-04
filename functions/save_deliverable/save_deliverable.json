@@ -1,0 +1,13 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "code_hash": "cce71b1608a933c0d1c35e68ea2097f2dedcd60cb4d362ec23f111fc0f0f10ba",
+  "config": null,
+  "description": "Save an agent's finished deliverable as markdown under /knowledge/deliverables/RT-<n>-<slug>.md so it is searchable and shown on the task.",
+  "icon_url": null,
+  "name": "save_deliverable",
+  "python_packages": [],
+  "type": "API",
+  "visibility": "POD"
+}
