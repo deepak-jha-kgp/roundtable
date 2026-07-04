@@ -1,0 +1,13 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "code_hash": "286d5bbe4457f168409954e0637621a4a29763f632162d43cb066247086044fb",
+  "config": null,
+  "description": "Create an agent conversation for an assigned issue and fire the first turn.",
+  "icon_url": null,
+  "name": "dispatch_issue",
+  "python_packages": [],
+  "type": "JOB",
+  "visibility": "POD"
+}
