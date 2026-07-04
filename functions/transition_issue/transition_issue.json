@@ -1,0 +1,13 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "code_hash": "18b47f43ee7403c3dc8f0513f503a988270c44be23ed513694044fdc7c4bfd0f",
+  "config": null,
+  "description": "Update an issue's status/run_state and record the transition event.",
+  "icon_url": null,
+  "name": "transition_issue",
+  "python_packages": [],
+  "type": "API",
+  "visibility": "POD"
+}
