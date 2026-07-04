@@ -1,0 +1,13 @@
+{
+  "code": {
+    "$file": "code.py"
+  },
+  "code_hash": "09a18ac57816ada02f46cd27415464595523fa003e78fbfda90c8c74daac6f51",
+  "config": null,
+  "description": "Create a child issue linked to a parent. Agents use this to spawn related work.",
+  "icon_url": null,
+  "name": "create_subissue",
+  "python_packages": [],
+  "type": "API",
+  "visibility": "POD"
+}
